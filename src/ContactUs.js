@@ -1,7 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ContactUs.css';
+import Footer from './Footer';
+
 
 const ContactUs = () => {
+
+    const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = {
+        firstName: form.firstname.value.trim(),
+        lastName: form.lastname.value.trim(),
+        email: form.email.value.trim(),
+        phone: form.phone.value.trim(),
+        company: form.company.value.trim(),
+        subject: form.subject.value.trim(),
+        message: form.message.value.trim(),
+    };
+
+    if (!data.firstName || !data.lastName || !data.email || !data.subject || !data.message) {
+        alert('Please fill in all required fields.');
+        return;
+    }
+
+   
+    setSubmitted(true);
+    form.reset();
+    alert('✅ Your message has been sent successfully!');
+
+    };
+
+    const [submitted, setSubmitted] = useState(false);
+
+
   return (
     <div className="contact-page">
       <div className="contact-header">
@@ -23,26 +55,32 @@ const ContactUs = () => {
           <img src="/woman.png" alt="Contact" />
         </div>
 
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <h3>Get in Touch with Us</h3>
+
           <div className="form-row">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            <input type="text" placeholder="First Name" name="firstname" required />
+            <input type="text" placeholder="Last Name" name="lastname" required  />
           </div>
           <div className="form-row">
-            <input type="email" placeholder="Email Address" />
-            <input type="text" placeholder="Mobile Number" />
+            <input type="email" placeholder="Email Address" name="email" required />
+            <input type="text" placeholder="Mobile Number" name="phone"  />
           </div>
           <div className="form-row">
-            <input type="text" placeholder="Company Name" />
-            <input type="text" placeholder="Subject" />
+            <input type="text" placeholder="Company Name" name="company" />
+            <input type="text" placeholder="Subject" name="subject" required  />
           </div>
-          <textarea placeholder="Message"></textarea>
+          <textarea placeholder="Message" name="message" required ></textarea>
           <button type="submit">Submit Message</button>
         </form>
       </div>
+      <Footer /> 
     </div>
+    
+    
   );
+
+  
 };
 
 export default ContactUs;
