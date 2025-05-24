@@ -1,0 +1,105 @@
+.about-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.about-header .tagline {
+  color: #ff4d4d;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about-header .desc {
+  color: #ccc;
+  font-size: 15px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-images {
+  margin: 40px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.about-images img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.why-work h2 {
+  margin-top: 30px;
+}
+
+.pill-container {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pill-container span {
+  background-color: #1a1a1a;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #ff4d4d;
+}
+
+.about-cards {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+.about-values h2 {
+  margin: 40px 0 20px;
+}
+
+.value-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.value-cards div {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 250px;
+}
+
+.about-stats {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat-card {
+  background: linear-gradient(to right, #ff4d4d, #ff9900);
+  padding: 30px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}

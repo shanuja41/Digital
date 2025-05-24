@@ -4,10 +4,27 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
+
+      {/* Newsletter Section */}
+      <div className="newsletter">
+        <h3>Subscribe <span>Our Newsletter</span></h3>
+        <p>
+          Subscribe to Adada Digital’s newsletter for the latest updates, industry news, and exclusive offers.
+          Stay informed and ahead in the digital world!
+        </p>
+        <div className="newsletter-input">
+          <input type="email" placeholder="Enter email address" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+      {/* Footer Main Content */}
       <div className="footer-top">
         <div className="footer-brand">
           <h2>🟧🟥🟨 Digital</h2>
-          <p>We are passionate about crafting innovative digital solutions that help businesses thrive in a rapidly evolving digital landscape.</p>
+          <p>
+            At Adada Digital, we are passionate about crafting innovative digital solutions that help businesses thrive in a rapidly evolving digital landscape.
+          </p>
           <div className="social-icons">
             <i className="fab fa-facebook-f" />
             <i className="fab fa-instagram" />
@@ -56,12 +73,14 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>© 2024 - ADADA DIGITAL. All rights reserved</p>
         <select>
           <option>Australia</option>
         </select>
       </div>
+
     </footer>
   );
 };
