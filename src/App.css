@@ -1,3 +1,21 @@
+/* Apply to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and html settings */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+
+
 .App {
   text-align: center;
 }

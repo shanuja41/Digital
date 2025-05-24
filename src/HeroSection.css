@@ -1,0 +1,53 @@
+.hero {
+  background: url('assets/bg.jpeg')no-repeat center center;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  z-index: 1;
+}
+
+.tagline {
+  color: #ff4d4d;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.headline {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.subtext {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.explore-btn {
+  padding: 12px 25px;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #e63e3e;
+}
