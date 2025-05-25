@@ -22,22 +22,42 @@
   font-size: 15px;
   max-width: 700px;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .about-images {
-  margin: 40px 0;
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
 }
 
+/* Individual image positioning */
+.about-images img:nth-child(1) { /* Team 1 */
+  transform: translateY(-30px);
+}
+.about-images img:nth-child(2) { /* Team 2 */
+  transform: translateY(30px);
+}
+.about-images img:nth-child(3) { /* Team 3 */
+  transform: translateY(-30px);
+}
+
+/* Shared image styles */
 .about-images img {
   width: 250px;
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
+/* Hover effect */
+.about-images img:hover {
+  transform: translateY(-10px) scale(1.05);
+}
 .why-work h2 {
   margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .pill-container {
@@ -60,7 +80,7 @@
   margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 50px;
   max-width: 1000px;
 }
 
@@ -69,7 +89,12 @@
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
 
 .about-values h2 {
   margin: 40px 0 20px;
@@ -80,6 +105,14 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+}
+
+.value-cards > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .value-cards div {
@@ -94,12 +127,30 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+
 }
 
+.stat-card .p-design{
+  font-size: 14px;          /* Example: smaller font */
+  color: #ffffff;              /* Lighter text color */
+  line-height: 1.5;         /* Better readability */
+  margin-top: 8px;          /* Space from previous element */
+  
+
+
+}
+
+.stat-card .stat-girl{
+  transform: translateX(-15%);
+
+
+}
 .stat-card {
-  background: linear-gradient(to right, #ff4d4d, #ff9900);
+  background: linear-gradient(to top, #ff4d4d, #f57272);
   padding: 30px;
   border-radius: 10px;
-  color: black;
-  font-weight: bold;
+  color: rgb(255, 255, 255);
+  width: 300px;
+  height:550px;
+  
 }
