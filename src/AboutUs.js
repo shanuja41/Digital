@@ -140,8 +140,6 @@ const AboutUs = () => {
           <p>Years of Experience</p>
           <p className="p-design">With 5 years of industry experience, our expert team combines creativity
     and technology to deliver outstanding digital outcomes.</p><br></br>
-
-
         </div>
       </div>
     </section>
