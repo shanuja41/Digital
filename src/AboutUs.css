@@ -1,8 +1,11 @@
 .about-section {
   background-color: #000;
   color: #fff;
-  padding: 60px 30px;
+  padding: 90px 30px;
   text-align: center;
+  max-width: 1200px; 
+  margin: 0 auto;       
+  box-sizing: border-box;
 }
 
 .about-header .tagline {
@@ -32,28 +35,26 @@
   margin: 40px 0;
 }
 
-/* Individual image positioning */
-.about-images img:nth-child(1) { /* Team 1 */
+.about-images img:nth-child(1) {
   transform: translateY(-30px);
 }
-.about-images img:nth-child(2) { /* Team 2 */
+.about-images img:nth-child(2) {
   transform: translateY(30px);
 }
-.about-images img:nth-child(3) { /* Team 3 */
+.about-images img:nth-child(3) {
   transform: translateY(-30px);
 }
 
-/* Shared image styles */
 .about-images img {
   width: 250px;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-/* Hover effect */
 .about-images img:hover {
   transform: translateY(-10px) scale(1.05);
 }
+
 .why-work h2 {
   margin-top: 30px;
   padding-top: 50px;
@@ -76,6 +77,14 @@
   color: #ff4d4d;
 }
 
+.why-work span{
+ color: #ff4d4d;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
 .about-cards {
   margin: 40px auto;
   display: grid;
@@ -93,11 +102,18 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
+  border: 2px solid transparent;
 }
 
+.card:hover {
+  box-shadow: 0 0 10px 2px #ff4d4d;
+}
 
 .about-values h2 {
-  margin: 40px 0 20px;
+  margin: 40px;
 }
 
 .value-cards {
@@ -122,36 +138,58 @@
   max-width: 250px;
 }
 
+.v-card {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none; /* Prevent text selection on click */
+}
+
+.v-card:hover {
+  background-color: #221111;
+}
+
+.v-card.active {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px 4px #ff4d4d;
+  background-color: #330000;
+}
+
+
 .about-stats {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 40px;
   padding-bottom: 50px;
-
+  flex-wrap: wrap;          
 }
 
-.stat-card .p-design{
-  font-size: 14px;          /* Example: smaller font */
-  color: #ffffff;              /* Lighter text color */
-  line-height: 1.5;         /* Better readability */
-  margin-top: 8px;          /* Space from previous element */
+.stat-card .p-design {
+  font-size: 14px;          
+  color: #ffffff;          
+  line-height: 1.5;         
+  margin-top: 8px;          
+}
+
+.stat-card .stat-girl {
+  transform: none;          
+  max-width: 100%;
+  height: auto;
   
-
-
 }
 
-.stat-card .stat-girl{
-  transform: translateX(-15%);
-
-
-}
 .stat-card {
   background: linear-gradient(to top, #ff4d4d, #f57272);
   padding: 30px;
   border-radius: 10px;
   color: rgb(255, 255, 255);
   width: 300px;
-  height:550px;
-  
+  height: auto;           
+  min-height: 550px;       
+  box-sizing: border-box;
+  overflow-wrap: break-word; 
 }

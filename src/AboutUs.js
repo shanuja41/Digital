@@ -26,7 +26,7 @@ const AboutUs = () => {
       </div>
 
       <div className="why-work">
-        <h2>Crafting Digital Excellence, Together with You</h2>
+        <h2><span>WHY WORK WITH US </span><br></br>Crafting Digital Excellence, Together with You</h2>
         <div className="pill-container">
           <span>Logo Design</span>
           <span>Web Design</span>
@@ -80,42 +80,37 @@ const AboutUs = () => {
       <div className="about-values">
         <h2>Guiding Principles That Drive Our Success</h2>
         <div className="value-cards">
-          <div>
+          <div className="v-card">
             <FaLightbulb size={28} style={{ marginBottom: '8px', color: '#ff4d4d' }} />
             <h4>Innovation</h4>
             <p>We push boundaries creatively.</p>
           </div>
-          <div>
+          <div className="v-card">
             <FaBalanceScale size={28} style={{ marginBottom: '8px', color: '#ff4d4d' }} />
             <h4>Integrity</h4>
             <p>We act transparently and ethically.</p>
           </div>
-          <div>
+          <div className="v-card">
             <FaMedal size={28} style={{ marginBottom: '8px', color: '#ff4d4d' }} />
             <h4>Excellence</h4>
             <p>We deliver impactful digital outcomes.</p>
           </div>
         </div>
-
       </div>
 
       <div className="about-stats">
         <div className="stat-card">
           <h3>50+</h3>
           <p>Successful Projects</p>
-          <p className="p-design">We have delivered over 50 high-impact projects across various industries,
-    consistently exceeding client expectations through innovative and
-    customized digital solutions.</p><br></br>
+          <p className="p-design">We have delivered over 50 high-impact projects across various industries, consistently exceeding client expectations through innovative and customized digital solutions.</p><br></br>
 
           <h3>30+</h3>
           <p>Satisfied Clients</p>
-          <p className="p-design"> Trusted by over 30 clients worldwide, we prioritize client satisfaction
-    and long-term partnerships, ensuring business growth and success.</p><br></br>
+          <p className="p-design"> Trusted by over 30 clients worldwide, we prioritize client satisfaction and long-term partnerships, ensuring business growth and success.</p><br></br>
 
           <h3>5+</h3>
           <p>Years of Experience</p>
-          <p className="p-design">With 5 years of industry experience, our expert team combines creativity
-    and technology to deliver outstanding digital outcomes.</p><br></br>
+          <p className="p-design">With 5 years of industry experience, our expert team combines creativity and technology to deliver outstanding digital outcomes.</p><br></br>
 
         </div>
 
@@ -127,19 +122,15 @@ const AboutUs = () => {
         <div className="stat-card">
           <h3>50+</h3>
           <p>Successful Projects</p>
-          <p className="p-design">We have delivered over 50 high-impact projects across various industries,
-    consistently exceeding client expectations through innovative and
-    customized digital solutions.</p><br></br>
+          <p className="p-design">We have delivered over 50 high-impact projects across various industries, consistently exceeding client expectations through innovative and customized digital solutions.</p><br></br>
 
           <h3>30+</h3>
           <p>Satisfied Clients</p>
-          <p className="p-design"> Trusted by over 30 clients worldwide, we prioritize client satisfaction
-    and long-term partnerships, ensuring business growth and success.</p><br></br>
+          <p className="p-design"> Trusted by over 30 clients worldwide, we prioritize client satisfaction and long-term partnerships, ensuring business growth and success.</p><br></br>
 
           <h3>5+</h3>
           <p>Years of Experience</p>
-          <p className="p-design">With 5 years of industry experience, our expert team combines creativity
-    and technology to deliver outstanding digital outcomes.</p><br></br>
+          <p className="p-design">With 5 years of industry experience, our expert team combines creativity and technology to deliver outstanding digital outcomes.</p><br></br>
         </div>
       </div>
     </section>

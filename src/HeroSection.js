@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./HeroSection.css";
 
 const HeroSection = () => {
+  const [visible, setVisible] = useState(false);
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect(); 
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="hero">
-      <div className="hero-content">
+    <div className="hero" ref={heroRef}>
+      <div className={`hero-content slide-in ${visible ? "active" : ""}`}>
         <p className="tagline">INNOVATIVE SOLUTIONS FOR A DIGITAL WORLD</p>
         <h1 className="headline">
-          Transforming <span className="highlight">Ideas</span> into <br />
-          <span className="highlight">Digital Reality</span>
+          Transforming Ideas into <br /> Digital Reality
         </h1>
         <p className="subtext">
           Bringing your vision to life with innovative digital solutions,

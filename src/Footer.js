@@ -1,11 +1,13 @@
 import React from 'react';
 import './Footer.css';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa';
+import logo from './assets/logo.png'
 
 const Footer = () => {
   return (
     <footer className="footer">
 
-      {/* Newsletter Section */}
+     
       <div className="newsletter">
         <h3>Subscribe <span>Our Newsletter</span></h3>
         <p>
@@ -18,19 +20,19 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Main Content */}
+      
       <div className="footer-top">
         <div className="footer-brand">
-          <h2>Adada Digital</h2>
+          <img src={logo} alt="logo"></img>
           <p>
             At Adada Digital, we are passionate about crafting innovative digital solutions that help businesses thrive in a rapidly evolving digital landscape.
           </p>
           <div className="social-icons">
-            <i className="fab fa-facebook-f" />
-            <i className="fab fa-instagram" />
-            <i className="fab fa-linkedin-in" />
-            <i className="fab fa-twitter" />
-            <i className="fab fa-youtube" />
+            <FaFacebookF />
+            <FaInstagram />
+            <FaLinkedinIn />
+            <FaTwitter />
+            <FaYoutube />
           </div>
         </div>
 
@@ -73,10 +75,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
+     
       <div className="footer-bottom">
         <p>© 2024 - ADADA DIGITAL. All rights reserved</p>
-          <option>Australia</option>
+        <p>Australia</p>
       </div>
 
     </footer>
